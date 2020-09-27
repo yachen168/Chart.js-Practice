@@ -1,14 +1,20 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import MixedChart from "@/views/MixedChart.vue";
+import BarChart from "@/views/BarChart.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "MixedChart",
+    component: MixedChart
+  },
+  {
+    path: "/bar",
+    name: "BarChart",
+    component: BarChart
   }
 ];
 
